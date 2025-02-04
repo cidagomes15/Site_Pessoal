@@ -1,0 +1,93 @@
+:root {
+    --cor-principal: #BFAEBF; /* 60% */
+    --cor-secundaria: #8C6C87; /* 30% */
+    --cor-destaque: #262626; /* 10% */
+    --fundo-claro: #F9F9F9;
+    --fundo-escuro: #333333;
+}
+
+/* Resetando estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: var(--fundo-claro);
+    color: var(--fundo-escuro);
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 50px 20px;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+}
+
+#hero img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+/* Curiosidades (Cards) */
+.cards {
+    margin-top: 30px;
+}
+
+.card {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    padding: 20px;
+    background-color: var(--cor-principal);
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Footer com estilo de nuvem */
+footer {
+    background: var(--cor-principal);
+    padding: 50px 20px;
+    border-radius: 100px 100px 0 0;
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cida Gomes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap">
+    <style>
+        /* Paleta de Cores */
+        :root {
+            --cor-principal: #BFAEBF;
+            --cor-secundaria: #8C6C87;
+            --cor-destaque: #262626;
+            --fundo-claro: #F9F9F9;
+            --fundo-escuro: #333333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif; /* Fonte bonita e estilosa */
+        }
+
+        body {
+            background-color: var(--fundo-claro);
+            color: var(--fundo-escuro);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--cor-principal);
+            color: white;
+            padding: 15px 0; /* Espaçamento equilibrado */
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px; /* Espaçamento equilibrado */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        section {
+            min-height: auto; /* Remove altura fixa */
+            padding: 40px 20px; /* Espaçamento equilibrado */
+            display: block;
+            margin-bottom: 10px; /* Espaçamento equilibrado entre as seções */
+        }
+
+        #hero {
+            background-color: var(--cor-secundaria);
+            color: white;
+            height: 100vh; /* Ocupa 100% da altura da tela */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+            text-align: center;
+        }
+
+        #hero h2 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        }
+
+        #hero img {
+            border-radius: 50%;
+            border: 5px solid white;
+            width: 250px; /* Tamanho equilibrado */
+            height: 350px; /* Tamanho equilibrado */
+        }
+
+        .cards {
+            display: block; /* Remove flexbox */
+            max-width: 900px; /* Limita a largura dos cards */
+            margin: 0 auto; /* Centraliza os cards */
+            font-size: 0; /* Remove espaços entre os cards inline-block */
+        }
+
+        .card {
+            width: 30%; /* Define a largura dos cards para 3 colunas */
+            display: inline-block; /* Coloca os cards lado a lado */
+            margin: 1%; /* Espaçamento equilibrado entre os cards */
+            padding: 15px; /* Padding equilibrado */
+            background-color: var(--cor-principal);
+            border-radius: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            aspect-ratio: 1 / 1; /* Cards quadrados */
+            vertical-align: top; /* Alinha os cards no topo */
+            font-size: 16px; /* Restaura o tamanho da fonte */
+        }
+
+        .card img {
+            width: 100%;
+            height: 140px; /* Altura equilibrada para as imagens */
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px; /* Espaçamento equilibrado */
+        }
+
+        footer {
+            background: var(--cor-principal);
+            padding: 30px 20px; /* Padding equilibrado */
+            border-radius: 80px 80px 0 0; /* Bordas arredondadas equilibradas */
+            color: white;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cida Gomes</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#curiosidades">Curiosidades</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h2>Cida Gomes</h2>
+        <img src="Cida.jpg" alt="Foto de Cida">
+    </section>
+    
+    <section id="sobre">
+        <p>Olá! Me chamo Maria Aparecida Gomes (Cida), moro em Ielmo Marinho-RN. Gosto de dormir, assistir animes, ler livros e ver séries. Meu sonho é passar no ENEM e cursar a faculdade de Medicina.</p>
+    </section>
+    
+    <section id="curiosidades">
+        <h2>Curiosidades sobre mim</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="ensino-medio.jpg" alt="Ensino Médio">
+                <h3>Ensino Médio</h3>
+                <p>Concluí o Ensino Médio no período da pandemia.</p>
+            </div>
+            <div class="card">
+                <img src="alergia.jpg" alt="Alergia">
+                <h3>Alergia</h3>
+                <p>Tenho alergia a camarão.</p>
+            </div>
+            <div class="card">
+                <img src="comida.jpg" alt="Comida">
+                <h3>Comida</h3>
+                <p>Não gosto de abacaxi.</p>
+            </div>
+            <div class="card">
+                <img src="esporte.jpg" alt="Esporte">
+                <h3>Esporte</h3>
+                <p>Meu esporte preferido é o voleibol.</p>
+            </div>
+            <div class="card">
+                <img src="torcida.jpg" alt="Torcida">
+                <h3>Torcida</h3>
+                <p>Sou corinthiana, mesmo com minha família torcendo para o Flamengo.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <p>Jogo vôlei, sou boa em matérias de exatas e também em jogos de cartas.</p>
+    </section>
+    
+    <footer id="contato">
+        <h3>Contatos</h3>
+        <p>Email: <a href="mailto:aparecida.gomes@escolar.ifrn.edu.br">aparecida.gomes@escolar.ifrn.edu.br</a></p>
+        <p>Telefone: <a href="tel:+5584991428976">(84) 99142-8976</a></p>
+        <p>GitHub: <a href="https://github.com/cidagomes15" target="_blank">cidagomes15</a></p>
+    </footer>
+</body>
+</html>
