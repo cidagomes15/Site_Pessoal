@@ -1,20 +1,18 @@
 :root {
-    --cor-principal: #BFAEBF; /* 60% */
-    --cor-secundaria: #8C6C87; /* 30% */
-    --cor-destaque: #262626; /* 10% */
+    --cor-principal: #BFAEBF;
+    --cor-secundaria: #8C6C87;
+    --cor-destaque: #262626;
     --fundo-claro: #F9F9F9;
     --fundo-escuro: #333333;
 }
 
-/* Resetando estilos básicos */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif; 
 }
 
-/* Corpo da página */
 body {
     background-color: var(--fundo-claro);
     color: var(--fundo-escuro);
@@ -22,25 +20,26 @@ body {
     text-align: center;
 }
 
-/* Header */
 header {
     background-color: var(--cor-principal);
     color: white;
-    padding: 20px 0;
+    padding: 15px 0; 
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5rem;
+    font-weight: 600;
 }
 
 nav ul {
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 15px; 
 }
 
 nav ul li a {
@@ -49,43 +48,79 @@ nav ul li a {
     font-weight: bold;
 }
 
-/* Hero Section */
+section {
+    min-height: auto; 
+    padding: 40px 20px; 
+    display: block;
+    margin-bottom: 10px; 
+}
+
 #hero {
     background-color: var(--cor-secundaria);
     color: white;
-    padding: 50px 20px;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
 }
 
 #hero h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px; 
 }
 
 #hero img {
     border-radius: 50%;
     border: 5px solid white;
+    width: 250px; 
+    height: 350px; 
 }
 
-/* Curiosidades (Cards) */
 .cards {
-    margin-top: 30px;
+    display: block; 
+    max-width: 900px; 
+    margin: 0 auto; 
+    font-size: 0; 
 }
 
 .card {
-    display: inline-block;
-    width: 30%;
-    margin: 15px;
-    padding: 20px;
+    width: 30%; 
+    display: inline-block; 
+    margin: 1%; 
+    padding: 15px; 
     background-color: var(--cor-principal);
     border-radius: 15px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    aspect-ratio: 1 / 1; 
+    vertical-align: top; 
+    font-size: 16px; 
 }
 
 .card img {
     width: 100%;
+    height: 140px; 
+    object-fit: cover;
     border-radius: 10px;
+    margin-bottom: 10px; 
 }
 
-/* Footer com estilo de nuvem */
+footer {
+    background: var(--cor-principal);
+    padding: 30px 20px; 
+    border-radius: 80px 80px 0 0; 
+    color: black;
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
 footer {
     background: var(--cor-principal);
     padding: 50px 20px;
